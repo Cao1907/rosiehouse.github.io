@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../js/bootstrap.js"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="../anh/anh-logo/shortcut-icon.jpg" type="image/png"> 
+    <!-- link bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JS -->
+    <script type="text/JavaScript" src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/Jquery-effect.js"></script>
+    <!-- <script type="text/JavaScript" src="../js/Jquery-3.3.1.js"></script> -->
+    <!-- Light-slider -->
+    <link rel="stylesheet" type="text/css" href="../css/lightslider.css">
+    <script type="text/JavaScript" src="../js/lightslider.js"></script>
+    <!-- Trang chỉnh hiệu ứng cho Light Slider -->
+    <script src="../js/trang-chu.js"></script>
+    <script src="../js/style.js"></script>
+    <!-- Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link Owl Carousel -->
+    <script src="../js/owlcaroulsel.js"></script>
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- Tên trang web -->
+    <title>Đồ án sử dụng bootstrap</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="row d-flex flex-row justify-content-end">
+            <div class="login-box d-flex flex-row justify-content-end ">
+                <button class="login-btn mx-2">
+                    <a href="../trang/dang-nhap.html">Log in</a>
+                </button>
+                <button class="cart-btn mx-2">
+                    <a href="#">Shop</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-4" href="../trang/trang-chu.html">
+            <h1 style="text-transform: uppercase; font-weight: 700;">Rosie House</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active px-4 py-2">
+                <a class="nav-link" aria-current="page" href="../trang/trang-chu.html" style="text-transform: uppercase; font-size: 1rem; font-weight: 700;">
+                    <span></span><span></span><span></span><span></span>
+                    Trang chủ
+                </a>
+              </li>
+              <li class="nav-item px-4 py-2">
+                <a class="nav-link" href="../trang/gioi-thieu.html" style="text-transform: uppercase; font-size: 1rem; font-weight: 700;">
+                    <span></span><span></span><span></span><span></span>
+                    Giới thiệu
+                </a>
+              </li>
+              <li class="nav-item dropdown px-4 py-2">
+                <a class="nav-link dropdown-toggle" href="../trang/duong-da.html" id="navbarDropdown" 
+                role="button" data-bs-toggle="dropdown" aria-expanded="false"  
+                style="text-transform: uppercase; font-size: 1rem; font-weight: 700;">
+                    <span></span><span></span><span></span><span></span>
+                    Sản phẩm
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul>
+                    <li><a class="dropdown-item" href="../trang/duong-da.html">Dưỡng da</a></li>
+                    <li><a class="dropdown-item" href="../trang/duong-da.html">Toner/Mist/Lotion</a></li>
+                    <li><a class="dropdown-item" href="../trang/duong-da.html">Serum</a></li>
+                    <li><a class="dropdown-item" href="../trang/duong-da.html">Cream/Eye Cream</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="../trang/trang-diem.html">Trang điểm</a></li>
+                    <li><a class="dropdown-item" href="../trang/trang-diem.html">Cleanser</a></li>
+                    <li><a class="dropdown-item" href="../trang/trang-diem.html">Mask</a></li>
+                    <li><a class="dropdown-item" href="../trang/trang-diem.html">Cream Make Up</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Chăm sóc tóc</a></li>
+                    <li><a class="dropdown-item" href="#">Shampoo/Hair Pack</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment</a></li>
+                    <li style="visibility: hidden;"><a class="dropdown-item" href="#">Mega Menu Bootstrap</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Nước hoa</a></li>
+                    <li><a class="dropdown-item" href="#">Perfume</a></li>
+                    <li style="visibility: hidden;"><a class="dropdown-item" href="#">Treatment</a></li>
+                    <li style="visibility: hidden;"><a class="dropdown-item" href="#">Mega Menu Bootstrap</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item px-4 py-2">
+                <a class="nav-link" href="#"style="text-transform: uppercase; font-size: 1rem; font-weight: 700;">
+                    <span></span><span></span><span></span><span></span>
+                    Liên hệ
+                </a>
+              </li>
+              <li class="nav-item px-4 py-2">
+                <a class="nav-link disabled" href="#" tabindex="-1"  aria-disabled="true" 
+                style="text-transform: uppercase; font-size: 1rem; font-weight: 700;">
+                    Tin tức
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="TÌM KIẾM Ở ĐÂY" aria-label="Search">
+              <button class="btn btn-outline-light border-0" type="submit"><i class="bi bi-search icon" 
+                style=" color: #dadada; font-size: 1.125rem; border: none; outline: none;"></i></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+</header>
+    <!-- Banner slider -->
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../anh/Anh raw/banner_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../anh/Anh raw/banner_2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../anh/Anh raw/banner_3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+    <!-- Product slider -->
+    <div class="container-fluid py-5 my-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="product-title-frame d-flex flex-lg-row justify-content-center align-self-center">
+            <h2 class="product-title d-flex align-self-center">Sản phẩm nổi bật</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <ul id="autoWidth" class="cs-hidden">
+          <!-- Sản phẩm 1 -->
+            <li class="item-a">
+              <div class="product-items-frame">
+                <div class="box-product">
+                  <div class="box-image">
+                    <img src="../anh/anh-san-pham/sp_banchay/spbc1.jpg" alt="" class="image">
+                      <div class="overlayer">
+                        <a href="" class="button-cart">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                        <a href="" class="button-readmore">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="box-detail d-flex flex-lg-row justify-content-center align-self-center">
+                    <ul class="detail-name">
+                      <li class="prename d-flex flex-lg-row align-self-center justify-content-center">
+                        <a href="#" class="product-name">Nước Hoa Hồng Secret Key Starting Treatment Essence Rose Edition 150ml</a>
+                      </li>
+                      <li class="presubname d-flex flex-lg-row align-self-center justify-content-center">
+                        <p>Chứa 95% Galactomyces</p>
+                      </li>
+                      <li class="preprice">
+                        <p>270.000 VNĐ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Sản phẩm 2 -->
+            <li class="item-b">
+              <div class="product-items-frame">
+                <div class="box-product">
+                  <div class="box-image">
+                    <img src="../anh/anh-san-pham/sp_banchay/spbc2.jpg" alt="" class="image">
+                      <div class="overlayer">
+                        <a href="" class="button-cart">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                        <a href="" class="button-readmore">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="box-detail d-flex flex-lg-row justify-content-center align-self-center">
+                    <ul class="detail-name">
+                      <li class="prename d-flex flex-lg-row align-self-center justify-content-center">
+                        <a href="#" class="product-name">Kem Dưỡng Mắt Secret Key Secret Key Starting Treatment Rose Facial Eye Cream 40g</a>
+                      </li>
+                      <li class="presubname d-flex flex-lg-row align-self-center justify-content-center">
+                        <p>Gói làm sáng tức thời dạng rửa trôi</p>
+                      </li>
+                      <li class="preprice">
+                        <p>455.000 VNĐ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Sản phẩm 3 -->
+            <li class="item-c">
+              <div class="product-items-frame">
+                <div class="box-product">
+                  <div class="box-image">
+                    <img src="../anh/anh-san-pham/sp_banchay/spbc3.jpg" alt="" class="image">
+                      <div class="overlayer">
+                        <a href="" class="button-cart">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                        <a href="" class="button-readmore">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="box-detail d-flex flex-lg-row justify-content-center align-self-center">
+                    <ul class="detail-name">
+                      <li class="prename d-flex flex-lg-row align-self-center justify-content-center">
+                        <a href="#" class="product-name">Xịt Khoáng Secret Key Starting Treatment Rose Oil Serum Mist</a>
+                      </li>
+                      <li class="presubname d-flex flex-lg-row align-self-center justify-content-center">
+                        <p>Xịt khoáng thơm làm dịu da</p>
+                      </li>
+                      <li class="preprice">
+                        <p>420.000 VNĐ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Sản phẩm 4 -->
+            <li class="item-d">
+              <div class="product-items-frame">
+                <div class="box-product">
+                  <div class="box-image">
+                    <img src="../anh/anh-san-pham/sp_banchay/spbc4.jpg" alt="" class="image">
+                      <div class="overlayer">
+                        <a href="" class="button-cart">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                        <a href="" class="button-readmore">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="box-detail d-flex flex-lg-row justify-content-center align-self-center">
+                    <ul class="detail-name">
+                      <li class="prename d-flex flex-lg-row align-self-center justify-content-center">
+                        <a href="#" class="product-name">Bộ Mặt nạ dưỡng da Start Treatment Essential 10p </a>
+                      </li>
+                      <li class="presubname d-flex flex-lg-row align-self-center justify-content-center">
+                        <p>Chứa tinh chất tăng cường sạch da</p>
+                      </li>
+                      <li class="preprice">
+                        <p>335.000 VNĐ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Sản phẩm 5 -->
+            <li class="item-e">
+              <div class="product-items-frame">
+                <div class="box-product">
+                  <div class="box-image">
+                    <img src="../anh/anh-san-pham/sp_banchay/spbc5.jpg" alt="" class="image">
+                      <div class="overlayer">
+                        <a href="" class="button-cart">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                        <a href="" class="button-readmore">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="box-detail d-flex flex-lg-row justify-content-center align-self-center">
+                    <ul class="detail-name">
+                      <li class="prename d-flex flex-lg-row align-self-center justify-content-center">
+                        <a href="#" class="product-name">Gói sữa tắm Secret Key bạch tuyết làm trắng da toàn thân 200g</a>
+                      </li>
+                      <li class="presubname d-flex flex-lg-row align-self-center justify-content-center">
+                        <p>Gói làm sáng tức thời dạng sữa</p>
+                      </li>
+                      <li class="preprice">
+                        <p>258.000 VNĐ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Sản phẩm 6 -->
+            <li class="item-f">
+              <div class="product-items-frame">
+                <div class="box-product">
+                  <div class="box-image">
+                    <img src="../anh/anh-san-pham/sp_banchay/spbc6.jpg" alt="" class="image">
+                      <div class="overlayer">
+                        <a href="" class="button-cart">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                        <a href="" class="button-readmore">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="box-detail d-flex flex-lg-row justify-content-center align-self-center">
+                    <ul class="detail-name">
+                      <li class="prename d-flex flex-lg-row align-self-center justify-content-center">
+                        <a href="#" class="product-name">Kem làm trắng da Bạch tuyết snow white secret 50g</a>
+                      </li>
+                      <li class="presubname d-flex flex-lg-row align-self-center justify-content-center">
+                        <p>Kem trang điểm trong suốt dành cho mặt mộc</p>
+                      </li>
+                      <li class="preprice">
+                        <p>400.000 VNĐ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Introduct about us -->
+    <div class="container-fluid py-5 my-5" style="background-color: #f8f8f8">
+      <div class="container">
+            <!-- Giới thiệu về sản phẩm bên chúng tôi -->
+            <div class="row bgrow2">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="introduce-box-2 d-flex flex-lg-row justify-content-center align-self-center py-5 mb-5">
+                  <h2 class="introduce-heading">
+                    Giới thiệu về các loại sản phẩm bên chúng tôi
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 introduce-product-frame">
+                <div class="introduce-product-box">
+                  <div class="content content-1">
+                    <div class="title-product">Mỹ phẩm dưỡng da</div>
+                    <div class="product-paragraph-box">
+                      <p>Bộ sưu tập của Secret Key bao gồm các sản phẩm như kem dưỡng da, tinh chất, mặt nạ, serum và các sản phẩm khác, đáp ứng nhu cầu chăm sóc và làm đẹp da 
+                        của mọi loại da. Chúng tôi sử dụng các thành phần tự nhiên và công nghệ tiên tiến để mang lại hiệu quả tối ưu cho làn da của bạn.</p>
+                    </div>
+                  </div>
+                  <div class="content content-1">
+                    <div class="title-product">Mỹ phẩm trang điểm</div>
+                    <div class="product-paragraph-box">
+                      <p>Bộ sưu tập mỹ phẩm trang điểm của Secret Key bao gồm các sản phẩm đa dạng và độc đáo, từ phấn nền, son môi, mascara, phấn má hồng đến bảng màu đa phong cách cho mắt. Chúng tôi cam kết chỉ sử dụng các thành phần an toàn và chất lượng, giúp bạn có một trải nghiệm trang điểm tuyệt vời mà không gây kích ứng cho da.</p>
+                    </div>
+                  </div>
+                    <div class="content content-1">
+                      <div class="title-product">Mỹ phẩm chăm sóc tóc</div>
+                      <div class="product-paragraph-box">
+                        <p>Bộ sưu tập mỹ phẩm chăm sóc tóc của Secret Key bao gồm các sản phẩm như dầu gội, dầu xả, mặt nạ chăm sóc tóc và các sản phẩm khác, đáp ứng từng vấn đề riêng biệt như tóc khô, tóc hư tổn, tóc mỏng yếu hay tóc gãy rụng.</p>
+                      </div>
+                    </div>
+                    <div class="content content-1">
+                      <div class="title-product">Mỹ phẩm nước hoa</div>
+                      <div class="product-paragraph-box">
+                        <p>Bộ sưu tập nước hoa của Secret Key mang đến cho bạn sự đa dạng về hương thơm, từ nhẹ nhàng và tinh tế đến quyến rũ và mạnh mẽ. Bạn có thể chọn lựa giữa các loại nước hoa hàng ngày, nước hoa dành cho dịp đặc biệt hoặc những mùi hương độc đáo để thể hiện cá nhân của mình.</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Gi ới thiệu về chúng -->
+            <div class="row bgrow2">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="introduce-box-1 d-flex flex-lg-row justify-content-center align-self-center py-5 mb-5">
+                  <h2 class="introduce-heading">
+                    Giới thiệu về chúng tôi
+                  </h2>
+                </div>
+                <div class="introduce-paragraph">
+                  <p class="paragraph">Chúng tôi cũng tự hào là đối tác và ủy quyền bán hàng của nhãn hàng Secret Key, một thương hiệu mỹ phẩm được tin dùng và yêu thích. Secret Key đã thu hút sự công nhận trong ngành công nghiệp mỹ phẩm với các sản phẩm chất lượng và hiệu quả. Chúng tôi mang đến cho bạn một loạt các sản phẩm chủ yếu của Secret Key, được chọn lọc cẩn thận để đáp ứng nhu cầu của khách hàng.
+                    Bạn sẽ tìm thấy các sản phẩm của Secret Key như Starting Treatment Essence, Snail Repairing Cream, Rose Floral Softening Toner, Lemon Sparkling Peeling Gel, và Starting Treatment Eye Cream trong cửa hàng trực tuyến của chúng tôi. Đây là những sản phẩm tốt nhất của Secret Key, được thiết kế để giúp bạn cải thiện làn da và tạo nên sự tự tin.
+                    Hãy khám phá bộ sưu tập sản phẩm của chúng tôi và trải nghiệm những giải pháp mỹ phẩm độc đáo từ Secret Key, giúp bạn có được làn da khỏe đẹp và tự tin hơn.</p>
+                </div>
+              </div>
+            </div>
+            <div class="readmore-button">
+              <span><a href="../trang/gioi-thieu.html">Xem thêm</a></span>
+            </div>
+      </div>
+    </div>
+
+    <!-- Thông tin liên hệ -->
+    <div class="container">
+      <div class="row">
+          <div class="information-contact">
+            <h2 class="information-heading">Thông tin liên hệ</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="information-box">
+              <h3>Cửa hàng mỹ phẩm Rosie Cosmetics</h3>
+              <ul class="information-menu">
+                <li class="information-items">
+                  <i class="bi bi-house-add-fill information-icon"></i>
+                  <span>Số 2 Đường Trường Sa, P.14, Q.Bình Thạnh, TP.HCM</span>
+                </li>
+                <li class="information-items">
+                  <i class="bi bi-telephone-fill information-icon"></i>
+                  <span>09XXXXXXXX</span>
+                </li>
+                <li class="information-items">
+                  <i class="bi bi-envelope-fill information-icon"></i>
+                  <span>rosiecosmetics@gmail.com</span>
+                </li>
+                <li class="information-items">
+                  <i class="bi bi-facebook information-icon"></i>
+                  <span>rosiecosmetics@gmail.com</span>
+                </li>
+                <li class="information-items">
+                  <i class="bi bi-instagram information-icon"></i>
+                  <span>rosiecosmetics@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1385.6619656345981!2d106.7050081335935!3d10.792623377292147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175299a2a7aeb89%3A0xfe75f3431d8fd812!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7p3kgbOG7o2kgLSBQaMOibiBoaeG7h3UgTWnhu4FuIE5hbQ!5e0!3m2!1svi!2s!4v1711855751302!5m2!1svi!2s" width="600" height="347" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center">
+          <!-- Phần logo -->
+          <div class="col-lg-6 d-flex flex-column justify-content-center logo-footer">
+              <a href="../trang/trang-chu.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1 my-3">
+                  <h1 style="text-transform: uppercase; font-weight: 700;">Rosie House</h1>
+              </a>
+              <div class="span-footer d-flex flex-column justify-content-start">
+                  <span class="mb-3 mb-md-0 text-muted">Địa chỉ: Số 2 Trường Sa, P.14, Q.Bình Thạnh, TP.HCM</span>
+                  <span class="mb-3 mb-md-0 text-muted">SĐT: 09XXXXXXXX</span>
+                  <span class="mb-3 mb-md-0 text-muted">Email: rosiecosmetics@gmail.com</span>
+              </div>
+          </div>
+          <!-- Phần Menu -->
+          <div class="col-lg-6 d-flex flex-row flex-wrap justify-content-around">
+              <ul class="nav pb-3 mb-3 border-bottom menu-footer">
+                  <li class="nav-item"><a href="../trang/trang-chu.html" class="nav-link px-2 text-muted">Trang chủ</a></li>
+                  <li class="nav-item"><a href="../trang/gioi-thieu.html" class="nav-link px-2 text-muted">Giới thiệu</a></li>
+                  <li class="nav-item"><a href="../trang/duong-da.html" class="nav-link px-2 text-muted">Sản phẩm</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Liên hệ</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Tin tức</a></li>
+              </ul>
+          </div>
+      </footer>
+  </div>
+  <!-- Phần back-to-top -->
+  <a href="javascript:void();" id="backtoTop" class="backToTop">
+      <i class="bi bi-arrow-up"></i>
+  </a>
+
+</body>
+</html>
